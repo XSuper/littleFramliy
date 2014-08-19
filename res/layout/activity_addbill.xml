@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+        android:id="@+id/price"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:lines="5"
+        android:id="@+id/content"
+        />
+    <ImageButton 
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:id="@+id/addimgbtn"
+        />
+    <Button 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:text="@string/bill_submit"
+        />
+
+</LinearLayout>

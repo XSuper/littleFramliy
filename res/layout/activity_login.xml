@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/apply_input_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/username_ico"
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_margin="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/register_email" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:maxLength="20"
+                android:singleLine="true" 
+                android:hint="@string/mail"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="30dip"
+            android:background="#C8CACF" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/password_ico"
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_margin="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/login_password" />
+
+            <EditText
+                android:id="@+id/userpass"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:maxLength="20"
+                android:singleLine="true" 
+                android:hint="@string/password"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:text="@string/login_changetype_txt"
+            android:textColor="@color/mainColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/register"
+            android:textColor="@color/mainColor"
+            android:textSize="15sp" />
+
+        <com.isuper.littleframliy.view.SlidingButton
+            android:id="@+id/changeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/mainColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/common_btn"
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login" />
+
+</LinearLayout>
