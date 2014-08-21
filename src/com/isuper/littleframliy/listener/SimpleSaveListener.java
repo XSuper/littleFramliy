@@ -5,6 +5,7 @@ import cn.bmob.v3.listener.SaveListener;
 
 import com.isuper.littleframliy.R;
 import com.isuper.littleframliy.base.BaseActivity;
+import com.isuper.littleframliy.util.AnimalUtil;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
 
@@ -66,7 +67,7 @@ public class SimpleSaveListener implements SaveListener {
 	private void clearProgressStateAndNotClick() {
 		for (View view : views) {
 			view.setClickable(true);
-			view.setAlpha(1f);
+			AnimalUtil.reset(view);
 
 		}
 		if (showTitleProgress) {
