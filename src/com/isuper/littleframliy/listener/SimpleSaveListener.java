@@ -17,7 +17,6 @@ public class SimpleSaveListener implements SaveListener {
 
 	public SimpleSaveListener(BaseActivity baseActivity,
 			boolean showTitleProgress) {
-		// TODO Auto-generated constructor stub
 		this.activity = baseActivity;
 		this.showTitleProgress = showTitleProgress;
 	}

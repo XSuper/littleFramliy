@@ -9,6 +9,8 @@
     <string name="netErro">网络请求失败</string>
 
     <string name="register_success">注册成功，自动登陆</string>
+    <string name="login_success">登陆成功</string>
+    
     <string name="bill_submit">提交</string>
     
     <!--  LoginActivity

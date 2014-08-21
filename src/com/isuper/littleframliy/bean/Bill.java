@@ -10,7 +10,7 @@ public class Bill extends BmobObject{
 	private User author;
 	private BmobDate date;
 	private BmobFile img;
-	private boolean isShare;//�жϸö��������������ѻ���һ��������
+	private boolean isShare;//
 	private Group group;
 	
 	

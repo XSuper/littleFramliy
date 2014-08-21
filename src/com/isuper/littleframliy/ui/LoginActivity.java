@@ -15,6 +15,7 @@ import com.isuper.littleframliy.R;
 import com.isuper.littleframliy.base.BaseActivity;
 import com.isuper.littleframliy.bean.User;
 import com.isuper.littleframliy.listener.SimpleSaveListener;
+import com.isuper.littleframliy.util.Md5;
 import com.isuper.littleframliy.util.StringUtils;
 import com.isuper.littleframliy.view.PopOverView;
 import com.isuper.littleframliy.view.SlidingButton;
@@ -111,7 +112,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			final User user = new User();
 			user.setUsername(userName.getText().toString());
 			user.setEmail(userName.getText().toString());
-			user.setPassword(userPass.getText().toString());
+			user.setPassword(Md5.MD5(userPass.getText().toString()));
 			if (isLogin) {
 				user.login(LoginActivity.this, new SimpleSaveListener(this,
 						true) {
@@ -119,7 +120,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 					public void onSuccess() {
 						// TODO Auto-generated method stub
 						super.onSuccess();
-						showToast("登陆成功");
+						showToast(getString(R.string.login_success));
 						Intent intent = new Intent(getBaseContext(), HomeActivity.class);
 						startActivity(intent);
 						finish();
@@ -138,7 +139,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 							public void onSuccess() {
 								// TODO Auto-generated method stub
 								super.onSuccess();
-								showToast("登陆成功");
+								showToast(getString(R.string.login_success));
 							}
 						}.start());
 					}

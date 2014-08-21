@@ -13,9 +13,6 @@ public class Group extends BmobObject{
 	private String password;
 	private User creater;
 	
-	
-	
-	
 	public String getPassword() {
 		return password;
 	}

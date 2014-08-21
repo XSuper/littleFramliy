@@ -1,3 +1,4 @@
+
 package com.isuper.littleframliy.ui;
 
 import android.content.Intent;
@@ -11,8 +12,6 @@ import cn.bmob.v3.BmobUser;
 import com.isuper.littleframliy.R;
 import com.isuper.littleframliy.base.BaseActivity;
 import com.isuper.littleframliy.bean.User;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.animation.ObjectAnimator;
 public class WelcomeActivity extends BaseActivity implements OnClickListener{
 	
 	

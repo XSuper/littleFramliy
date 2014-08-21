@@ -34,7 +34,6 @@ public class AddBillActivity extends Activity implements OnClickListener{
 	TextView date;
 	ImageButton addimg;
 	Button submit;
-	//����Ҫ���
 	
 	Handler handler = new Handler(){
 		@Override
