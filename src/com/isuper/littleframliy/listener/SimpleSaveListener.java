@@ -1,5 +1,6 @@
 package com.isuper.littleframliy.listener;
 
+import android.util.Log;
 import android.view.View;
 import cn.bmob.v3.listener.SaveListener;
 
@@ -27,8 +28,9 @@ public class SimpleSaveListener implements SaveListener {
 	 * @param views
 	 * @return
 	 */
-	public SimpleSaveListener start(View... views) {
-		this.views = views;
+	public SimpleSaveListener start(View... _views) {
+		views = _views;
+		
 		if (showTitleProgress) {
 			activity.showTitleProgress(true);
 		}
@@ -46,6 +48,8 @@ public class SimpleSaveListener implements SaveListener {
 			b.setRepeatMode(ObjectAnimator.INFINITE);
 			animatorSet.playTogether(a, b);
 			animatorSet.start();
+			view.setTag(animatorSet);
+			
 		}
 		return this;
 	}
@@ -65,7 +69,10 @@ public class SimpleSaveListener implements SaveListener {
 
 	private void clearProgressStateAndNotClick() {
 		for (View view : views) {
+			
 			view.setClickable(true);
+			AnimatorSet animatorSet = (AnimatorSet) view.getTag();
+			if(animatorSet!= null)animatorSet.end();
 			AnimalUtil.reset(view);
 
 		}

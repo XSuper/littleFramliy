@@ -132,6 +132,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 						true) {
 					@Override
 					public void onSuccess() {
+						super.onSuccess();
 						showToast(getString(R.string.register_success));
 						user.login(LoginActivity.this, new SimpleSaveListener(
 								LoginActivity.this, true) {

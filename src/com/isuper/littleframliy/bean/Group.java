@@ -7,7 +7,7 @@ import cn.bmob.v3.BmobObject;
 
 public class Group extends BmobObject{
 	
-	private int gid;
+	private Integer gid;
 	private String name;
 	private List<User> users;
 	private String password;

@@ -23,7 +23,8 @@ public class WelcomeActivity extends BaseActivity implements OnClickListener{
 		setContentView(R.layout.activity_welcome);
 		initView();
 		User user = BmobUser.getCurrentUser(this, User.class);
-		if(user!=null){
+//		if(user!=null){
+		if(false){
 			Intent intent = new Intent(this, HomeActivity.class);
 			startActivity(intent);
 			finish();
