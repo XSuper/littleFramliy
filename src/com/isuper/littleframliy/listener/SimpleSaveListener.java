@@ -1,6 +1,5 @@
 package com.isuper.littleframliy.listener;
 
-import android.util.Log;
 import android.view.View;
 import cn.bmob.v3.listener.SaveListener;
 
